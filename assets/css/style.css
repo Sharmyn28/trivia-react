@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+.container_roulette {
+    transform: scale(0.95);
+  }
+  .roulette {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    background-color: #808080;
+    background-size: 300px 300px;
+    background-image: url('http://triviacrackanswers.org/wp-content/uploads/2014/12/rrota.png');
+    border-radius: 300px;
+  }
+  
+  .spinner {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border: none;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 100px;
+    border-radius: 100%;
+    z-index: 1000;
+    background-color: gray;
+  }
+  
+  .spinner .pointer {
+    position: absolute;
+    width: 0; 
+      height: 0; 
+    top: -8px;
+    left: 40px;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid gray;
+  }
+
+/*--------STYLE------*/
+
+body{
+    background-color: rgba(128, 128, 128, 0.77);
+}
+
+.upperCase{
+  text-transform: uppercase;
+}
+
+.archivo{
+  font-family: 'Righteous';
+}
+
+.justify{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#title{
+  color: #fff;
+  font-size: 3em;
+}
+
+.img_character{
+  transform: scale(1.1);
+}
+
+#content{
+  background-color: #EBDEDE;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.outside{
+  flex-wrap: wrap;
+}
+.answer{
+  margin: 10px;
+}
+
+@media(max-width: 768px){
+	#title{
+		font-size: 1.5em;
+  }
+  
+  .container_roulette {
+    transform: scale(0.7);
+  }
+
+  .img_character{
+    transform: scale(0.5);
+  }
+
+  #question{
+    font-size: 1.2em;
+  }
+  .outside{
+    margin: 0;
+    padding: 0;
+  }
+  .column{
+    display: flex;
+    flex-direction: column;
+  }
+}
